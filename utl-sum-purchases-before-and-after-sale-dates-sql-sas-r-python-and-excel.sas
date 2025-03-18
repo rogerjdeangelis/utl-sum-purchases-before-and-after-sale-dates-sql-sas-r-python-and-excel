@@ -17,12 +17,16 @@ https://communities.sas.com/t5/SAS-Programming/Total-sum-before-and-after-dates-
 solution by ksharp
 https://communities.sas.com/t5/user/viewprofilepage/user-id/18408
 
+github
+https://tinyurl.com/yr5mh99p
+https://github.com/rogerjdeangelis/utl-sum-purchases-before-and-after-sale-dates-sql-sas-r-python-and-excel
+
 
 /**************************************************************************************************************************/
 /*   INPUTS             |               PROCESS                                      |     OUTPUT                         */
 /*                      |                                                            |     ======                         */
 /* TRANS DATES          |              1 SAS SQL (self explantory)                   |                                    */
-/*                      |               ==========================                   |    DT     SUM_LE_DATE SUM_GT_DATE  */
+/*                      |               ==========================                   | SALE_DATE SUM_LE_DATE SUM_GT_DATE  */
 /*      DT              |                                                            |                                    */
 /*                      |                                                            | 2024-07-04    60          430      */
 /* 2024-07-04           |                                                            | 2024-07-25   390          100      */
@@ -47,13 +51,13 @@ https://communities.sas.com/t5/user/viewprofilepage/user-id/18408
 /* TRANSACTIONS         |                                                            |                                    */
 /* ============         |------------------------------------------------------------|                                    */
 /*                      |                                                            |                                    */
-/* options              | 2 sql r (exactly the same code, see below)                 |                                    */
+/* options              | 2 SQL R (EXACTLY THE SAME CODE, SEE BELOW)                 |                                    */
 /* validvarname=upcase; | ==========================================                 |                                    */
 /* libname sd1 "d:/sd1";|                                                            |                                    */
-/* data sd1.trans;      | 3 sql python (exactly the same code, see below)            |                                    */
+/* data sd1.trans;      | 3 SQL PYTHON (EXACTLY THE SAME CODE, SEE BELOW)            |                                    */
 /* input DT $10.;       | ===============================================            |                                    */
 /* cards4;              |                                                            |                                    */
-/* 2024-07-04           | 4 sql excel (exactly the same code, see below)             |                                    */
+/* 2024-07-04           | 4 SQL EXCEL (EXACTLY THE SAME CODE, SEE BELOW)             |                                    */
 /* 2024-07-25           | ==============================================             |                                    */
 /* ;;;;                 |                                                            |                                    */
 /* run;quit;            |                                                            |                                    */
@@ -380,3 +384,4 @@ run;quit;
  \___|_| |_|\__,_|
 
 */
+
